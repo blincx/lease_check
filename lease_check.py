@@ -9,5 +9,8 @@ STARTDATE =  datetime.datetime(2019, 11, 9, 0, 0, tzinfo=pytz.UTC)
 NOW = datetime.datetime.now(pytz.utc)
 DIFF = NOW - STARTDATE # how long have had car
 DAYS = DIFF.days
+print("MILES YOU ARE ALLOWED THUS FAR: ")
+MILES_ALLOWED = (PERDAY * DAYS) + STARTED
+print(int(MILES_ALLOWED))
 
 
